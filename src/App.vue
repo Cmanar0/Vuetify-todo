@@ -57,6 +57,7 @@
           <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
           <v-spacer></v-spacer>
           <search />
+          <localeswitcher class="pl-3"/>
         </v-row>
         <v-row>
           <v-toolbar-title class="ml-4">Vuetify Todo</v-toolbar-title>
@@ -83,6 +84,7 @@
     }),
     components: {
       'search': require('@/components/Tools/Search.vue').default,
+      'localeswitcher': require('@/components/Tools/LocaleSwitcher.vue').default,
       'snackbar': require('@/components/Shared/Snackbar.vue').default
     }
   }

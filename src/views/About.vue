@@ -1,7 +1,7 @@
 <template>
   <div class="about pa-6">
     <h1>Coindesk API</h1>
-    <p>Current price of Bitcoin in different currencies displayed from coindesk API:</p>
+    <p>{{ $t("nav.home") }}</p>
     <api />
   </div>
 </template>
