@@ -11,7 +11,7 @@
         <v-list-item-title>{{post.code}}</v-list-item-title>
         <v-list-item-subtitle>
           <p class="price">{{$n(post.rate,"currency")}}</p>
-          <p class="price">{{$n(parseFloat(post.rate),"currency")}}</p>
+          <p class="price">{{$n(parseFloat(post.rate_float),"currency")}}</p>
 
           <p class="mb-0">Rate: {{post.rate}}</p>
         </v-list-item-subtitle>

@@ -1,0 +1,18 @@
+{
+  "shared": {
+    "snackbar": {
+      "close": "enClose",
+      "addtask": "enTask added!"
+    }
+  },
+
+
+
+
+
+  "x": {
+    "y": {
+      "z": "Current price of Bitcoin in different currencies displayed from coindesk API:"
+    }
+  }
+}

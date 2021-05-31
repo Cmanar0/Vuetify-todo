@@ -10,7 +10,7 @@
         text
         v-bind="attrs"
       >
-        Close
+        <p>{{ $t("shared.snackbar.close") }}</p>
       </v-btn>
     </template>
   </v-snackbar>
@@ -21,7 +21,3 @@ export default {
 
 }
 </script>
-
-<style>
-
-</style>

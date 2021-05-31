@@ -79,7 +79,7 @@ export default new Vuex.Store({
   actions: {
     addTask({ commit }, newTaskTitle) {
       commit('addTask', newTaskTitle)
-      commit('showSnackbar', 'Task added!')
+      commit('showSnackbar', '{{ $t("shared.snackbar.addtask") }}')
     },
     deleteTask({ commit }, id) {
       commit('deleteTask', id)
