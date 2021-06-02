@@ -1,7 +1,7 @@
 <template>
   <div class="about pa-6">
     <h1>Coindesk API</h1>
-    <p>{{ $t("nav.home") }}</p>
+    <p>{{ $t("about.description.text") }}</p>
     <api />
   </div>
 </template>

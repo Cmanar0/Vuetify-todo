@@ -4,7 +4,7 @@
     @keyup.enter="addTask"
     class="pa-3"
     outlined
-    label="Add Task"
+
     hide-details
     clearable
   >

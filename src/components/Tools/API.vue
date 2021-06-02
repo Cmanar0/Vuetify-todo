@@ -1,22 +1,15 @@
 <template>
 <div id="app">
-  <p class="price">{{$n(577527, "currency")}}</p>
   <ul>
     <v-list-item 
       three-line
-      v-for="post in info" 
+      v-for="post, index in info" 
       :key="post.symbol"
       >
       <v-list-item-content>
         <v-list-item-title>{{post.code}}</v-list-item-title>
         <v-list-item-subtitle>
-          <p class="price">{{$n(post.rate,"currency")}}</p>
-          <p class="price">{{$n(parseFloat(post.rate_float),"currency")}}</p>
-
-          <p class="mb-0">Rate: {{post.rate}}</p>
-        </v-list-item-subtitle>
-        <v-list-item-subtitle>
-          {{post.description}}
+          <p class="price mb-0">{{$n(parseFloat(post.rate_float),index)}}</p>
         </v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>

@@ -1,9 +1,14 @@
 const numberFormats = {
   en: {
-    currency: { style: "currency", currency: "USD" }
+    USD: { style: "currency", currency: "USD" },
+    EUR: { style: "currency", currency: "EUR" },
+    GBP: { style: "currency", currency: "GBP" },
   },
+  
   fr: {
-    currency: { style: "currency", currency: "USD", currencyDisplay: "code" }
+    USD: { style: "currency", currency: "USD" },
+    EUR: { style: "currency", currency: "EUR" },
+    GBP: { style: "currency", currency: "GBP" },
   }
 }
 

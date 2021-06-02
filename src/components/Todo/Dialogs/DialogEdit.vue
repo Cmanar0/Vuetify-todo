@@ -6,10 +6,10 @@
   >
     <v-card>
       <v-card-title class="headline">
-        Edit task
+        <p>{{ $t("todo.dialogs.dialogEdit.editTask") }}</p>
       </v-card-title>
       <v-card-text>
-        Edit the title of this task:
+        <p>{{ $t("todo.dialogs.dialogEdit.editTheTitle") }}</p>
         <v-text-field
           v-model="taskTitle"
           @keyup.enter="saveTask"
@@ -21,7 +21,7 @@
           @click="$emit('close')"
           text
         >
-          Cancel
+          <p>{{ $t("todo.dialogs.dialogEdit.cancel") }}</p>
         </v-btn>
         <v-btn
           @click="saveTask"
@@ -29,7 +29,7 @@
           color="red darken-1"
           text
         >
-          Save
+          <p>{{ $t("todo.dialogs.dialogEdit.save") }}</p>
         </v-btn>
       </v-card-actions>
     </v-card>

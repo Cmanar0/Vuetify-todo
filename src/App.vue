@@ -10,7 +10,7 @@
             Vuetify Todo
           </v-list-item-title>
           <v-list-item-subtitle>
-            Best Todo Ever!
+            <p>{{ $t("app.bestToDo") }}</p>
           </v-list-item-subtitle>
         </v-list-item-content>
       </v-list-item>
@@ -35,6 +35,7 @@
             <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
+        <localeswitcher style="width: auto" class="mt-1"/>
       </v-list>
     </v-navigation-drawer>
 
@@ -57,7 +58,6 @@
           <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
           <v-spacer></v-spacer>
           <search />
-          <localeswitcher class="pl-3"/>
         </v-row>
         <v-row>
           <v-toolbar-title class="ml-4">Vuetify Todo</v-toolbar-title>

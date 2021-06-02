@@ -16,14 +16,14 @@
         text
         color="primary"
       >
-        Cancel
+        <p>{{ $t("todo.dialogs.dialogDueDate.cancel") }}</p>
       </v-btn>
       <v-btn
         @click="saveTask"
         text
         color="primary"
       >
-        OK
+        <p>{{ $t("todo.dialogs.dialogDueDate.ok") }}</p>
       </v-btn>
     </v-date-picker>
   </v-dialog>

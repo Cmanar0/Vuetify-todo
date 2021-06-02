@@ -24,7 +24,7 @@
           <v-list-item-icon>
             <v-icon v-text="item.icon"></v-icon>
           </v-list-item-icon>
-          <v-list-item-title>{{ item.title }}</v-list-item-title>
+          <v-list-item-title>{{ $t(item.title) }}</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-menu>
@@ -59,21 +59,21 @@ export default {
     },
     items: [
       { 
-        title: 'Edit',
+        title: 'todo.taskMenu.title.edit',
         icon: 'mdi-pencil',
         click() {
           this.dialogs.edit = true
         }
       },
       {
-        title: 'Due date',
+        title: 'todo.taskMenu.title.dueDate',
         icon: 'mdi-calendar',
         click() {
           this.dialogs.dueDate = true
         }
       },
       {
-        title: 'Delete',
+        title: 'todo.taskMenu.title.delete',
         icon: 'mdi-delete',
         click() {
           this.dialogs.delete = true

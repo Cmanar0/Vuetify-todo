@@ -1,18 +1,49 @@
 {
-  "shared": {
-    "snackbar": {
-      "close": "enClose",
-      "addtask": "enTask added!"
+  "app": {
+    "bestToDo": "Best ToDo Ever!"
+  },
+  "about": {
+    "description": {
+      "text": "Current price of Bitcoin in different currencies displayed from coindesk API:"
     }
   },
-
-
-
-
-
-  "x": {
-    "y": {
-      "z": "Current price of Bitcoin in different currencies displayed from coindesk API:"
+  "shared": {
+    "snackbar": {
+      "close": "Close",
+      "taskAdded": "Task added!",
+      "taskDeleted": "Task deleted!",
+      "taskUpdated": "Task updated!",
+      "dueDateUpdated": "Due Date Updated!"
+    }
+  },
+  "todo": {
+    "dialogs": {
+      "dialogDelete": {
+        "deleteTask": "Delete task?",
+        "areYouSure": "Are you sure you wanna delete this task?",
+        "no": "No",
+        "yes": "Yes"
+      },
+      "dialogDueDate": {
+        "cancel": "Cancel",
+        "ok": "OK"
+      },
+      "dialogEdit": {
+        "editTask": "Edit task",
+        "editTheTitle": "Edit the title of this task:",
+        "cancel": "Cancel",
+        "save": "Save"
+      }
+    },
+    "noTasks": {
+      "noTasks": "No Tasks"
+    },
+    "taskMenu": {
+      "title": {
+        "edit": "Edit",
+        "dueDate": "due Date",
+        "delete": "Delete"
+      }
     }
   }
 }

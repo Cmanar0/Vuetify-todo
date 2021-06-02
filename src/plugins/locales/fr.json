@@ -1,6 +1,49 @@
 {
-  "nav": {
-    "home": "frCurrent price of Bitcoin in different currencies displayed from coindesk API:",
-    "about": "frAbout"
+  "app": {
+    "bestToDo": "Le meilleur  ToDo jamais eu!"
+  },
+  "about": {
+    "description": {
+      "text": "Le prix ​​actuel du Bitcoin dans différentes devises affiché à partir de l'API coindesk:"
+    }
+  },
+  "shared": {
+    "snackbar": {
+      "close": "fermé",
+      "taskAdded": "Tâche ajouté!",
+      "taskDeleted": "Tâche supprimé!",
+      "taskUpdated": "Tâche mise à jour!",
+      "dueDateUpdated": "Date d'échéance mise à jour!"
+    }
+  },
+  "todo": {
+    "dialogs": {
+      "dialogDelete": {
+        "deleteTask": "supprimée la tâche?",
+        "areYouSure": "Êtes-vous sûr de vouloir supprimer la tâche?",
+        "no": "Non",
+        "yes": "Oui"
+      },
+      "dialogDueDate": {
+        "cancel": "Annulé",
+        "ok": "OK"
+      },
+      "dialogEdit": {
+        "editTask": "Modifié tâche",
+        "editTheTitle": "Modifier le titre de la tâche",
+        "cancel": "Annulé",
+        "save": "Sauvegardé"
+      }
+    },
+    "noTasks": {
+      "noTasks": "Aucune Tâche"
+    },
+    "taskMenu": {
+      "title": {
+        "edit": "Éditer",
+        "dueDate": "Date d'échéance",
+        "delete": "Effacer"
+      }
+    }
   }
 }

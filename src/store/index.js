@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -79,19 +78,19 @@ export default new Vuex.Store({
   actions: {
     addTask({ commit }, newTaskTitle) {
       commit('addTask', newTaskTitle)
-      commit('showSnackbar', '{{ $t("shared.snackbar.addtask") }}')
+      commit('showSnackbar', 'shared.snackbar.taskAdded')
     },
     deleteTask({ commit }, id) {
       commit('deleteTask', id)
-      commit('showSnackbar', 'Task deleted!')
+      commit('showSnackbar', 'shared.snackbar.taskDeleted')
     },
     updateTaskTitle({ commit }, payload) {
       commit('updateTaskTitle', payload)
-      commit('showSnackbar', 'Task updated!')
+      commit('showSnackbar', 'shared.snackbar.taskUpdated')
     },
     updateTaskDueDate({ commit }, payload) {
       commit('updateTaskDueDate', payload)
-      commit('showSnackbar', 'Due Date Updated!')
+      commit('showSnackbar', 'shared.snackbar.dueDateUpdated')
     }
   },
   getters: {
@@ -106,3 +105,4 @@ export default new Vuex.Store({
   },
   
 })
+

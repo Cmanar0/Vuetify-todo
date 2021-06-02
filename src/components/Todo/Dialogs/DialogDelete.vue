@@ -6,23 +6,23 @@
   >
     <v-card>
       <v-card-title class="headline">
-        Delete task?
+      <p>{{ $t("todo.dialogs.dialogDelete.deleteTask") }}</p>
       </v-card-title>
-      <v-card-text>Are you sure you wanna delete this gosh darn motherflipping task?</v-card-text>
+      <v-card-text><p>{{ $t("todo.dialogs.dialogDelete.areYouSure") }}</p></v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
         <v-btn
           @click="$emit('close')"
           text
         >
-          No
+          <p>{{ $t("todo.dialogs.dialogDelete.no") }}</p>
         </v-btn>
         <v-btn
           @click="$store.dispatch('deleteTask', task.id)"
           color="red darken-1"
           text
         >
-          Yes
+          <p>{{ $t("todo.dialogs.dialogDelete.yes") }}</p>
         </v-btn>
       </v-card-actions>
     </v-card>
